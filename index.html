@@ -1,0 +1,79 @@
+<!DOCTYPE html>  
+<html lang="ja">
+    <head> <!--headは文書のヘッダ部分を指定するタグです-->
+        <meta charset="UTF-8"> <!-- metaは文書のメタデータを表す -->　
+        <title>HTML/CSSの学習</title> <!--titleはサイトタイトル-->
+        <link rel="stylesheet" href="stylesheet.css"> <!--linkは文書を他の外部リソースと関連付ける-->
+        <!--rel：relation 関係-->  <!--href：hypertext referencen 参照-->
+    </head>
+    <body> <!--bodyは文書の内容を表す-->
+        <div id="header"> <!--divで囲った部分をブロックレベル要素としてグループ化することができるタグです。-->
+        　　<!--idはHTMLのタグに設定できる属性-->　　　<!--headerは文書やセクションのヘッダーを表します。-->
+            <h1><a href="index.html"><img id="corridor" src="images/corridor.jpeg" alt="大学の廊下" /></a></h1>
+            <!--h1~h2見出しを意味するタグです。--> <!--aはリンクの出発点や到達点を指定するタグです。-->
+            <!--imgは文書内に画像を表示するためのタグです。--> <!--srcは指定します.--> <!--altは画像ファイルの説明文です。-->
+        </div>
+        <div id="wrapper"> <!--wrapper 囲っているもの。親。-->
+        </div>
+        <div id="nav"> <!--nav 主要なナビゲーションを表す-->
+            <ul> <!-- 順不同リストを表す -->
+              <li><a href="home.html">ナビ1</a></li> <!-- li リストの項目を表示するために使用するタグです。-->
+                    <li><a href="#">ナビ2</a></li>
+                    <li><a href="#">ナビ3</a></li>
+                    <li><a href="#">ナビ4</a></li>
+                    <li><a href="#">ナビ5</a></li>
+            </ul>
+        </div>
+        <div id="container"> <!-- container 画面内のコンテンツの収まる範囲を設定するブロック-->
+            <div id="main"> <!--main 主要なコンテンツを表す-->
+                <div class="post"> <!--classは、HTMLタグにつけるグループ分けの目印です。--> <!--POSTとは、ブラウザからサーバーにデータを送信するための形式です。-->
+                    <p>ここは文章が入ります。ここは文章が入ります。ここは文章が入ります。<br />今は、適当な文章を入れてあります。これをダミーテキストといいます。</p>
+                </div> <!--p 段落を指定するためのタグ--> 
+                <div class="post clearfix">
+                    <h2>小見出し1</h2>
+                    <img class="left" src="images/classroom.jpeg" alt="授業風景" />
+                    <p>
+                        コンテンツ1の本文になります。コンテンツ1の本文になります。コンテンツ1の本文になります。コンテンツ1の本文になります。
+                        コンテンツ1の本文になります。コンテンツ1の本文になります。コンテンツ1の本文になります。コンテンツ1の本文になります。
+                    </p>
+                    <p><a href="#">→コンテンツ1のページへ</a></p>
+                </div>
+                    <div class="post clearfix"> <!--clearfix 簡単に問題を解決することができます。-->
+                        <h2>小見出し2</h2>
+                        <img class="right" src="images/scale.jpeg" alt="天秤" /> <!--右端からの距離を指定するプロパティです。-->
+                        <p>
+                            コンテンツ2の本文になります。コンテンツ2の本文になります。コンテンツ2の本文になります。コンテンツ2の本文になります。
+                            コンテンツ2の本文になります。コンテンツ2の本文になります。コンテンツ2の本文になります。コンテンツ2の本文になります。
+                        </p>
+                    </div>
+            </div>
+            <div id="side">
+                <div class="box"> <!--box 要素は、ボックスと呼ばれる領域を生成します。-->
+                    <h2>サイドメニュー１</h2>
+                    <div class="boxBody">
+                        <ul>
+                            <li>項目1</li>
+                            <li>項目2</li>
+                            <li>項目3</li>
+                            <li>項目4</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    <h2>サイドメニュー2</h2>
+                    <div class="boxBody">
+                        <ul>
+                            <li>項目1</li>
+                            <li>項目2</li>
+                            <li>項目3</li>
+                            <li>項目4</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"> <!--footer 要素は、直近の区分コンテンツまたは区分化ルート要素のフッターを表します-->
+            <p>&copy; 20xx ○○ All Rights Reserved.</p>
+        </div>
+    </body>
+</html> 
